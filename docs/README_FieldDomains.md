@@ -1,4 +1,4 @@
-# Field Domains [¶](../README.md)
+# Field Domains
 
 Print out the domain name and type, if any, for a one or more fields in a feature.
 
