@@ -1,4 +1,4 @@
-# Select Random By Count [¶](../README.md)
+# Select Random By Count
 
 Select a random subset of records in a feature.
 
