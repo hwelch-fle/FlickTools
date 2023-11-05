@@ -1,4 +1,4 @@
-# Zoom To HUC [¶](../README.md)
+# Zoom To HUC
 
 Zooms the camera to the extent of a watershed.
 
