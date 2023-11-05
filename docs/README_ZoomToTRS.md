@@ -1,4 +1,4 @@
-# Zoom To TRS [¶](../README.md)
+# Zoom To TRS
 
 Zooms the camera to the extent of a township, range, and section. This tool only works for areas in the state of Oregon.
 
