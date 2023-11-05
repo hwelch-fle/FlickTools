@@ -1,4 +1,4 @@
-# Unique Values In Field [¶](../README.md)
+# Unique Values In Field
 
 Output all of the unique values for a field as a message in the geoprocessing pane, or as a table. Table output is only available for a single field.
 
