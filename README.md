@@ -22,4 +22,4 @@ To use this toolbox:
 3. Run tools  like any other ArcGIS Pro geoprocessing tool.
 
 # Contact
-Feel free to contact me at <kaden.c.flick@odf.oregon.gov> with any comments, questions, suggestions, or if things start breaking on you.
+Feel free to contact me at <kadenflick@gmail.com> with any comments, questions, suggestions, or if things start breaking on you.
