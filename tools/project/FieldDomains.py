@@ -8,6 +8,16 @@ class FieldDomains(Tool):
     """Tool Definition"""
     
     def __init__(self) -> None:
+        """
+        Displays the domains for one or more fields in a feature.
+
+        @self.project: arcpy project object
+        @self.project_location: path to the project
+        @self.project_name: name of the project
+        @self.default_gdb: path to the default gdb
+        @self.params: tool parameters (set with archelp.get_parameters())
+        """
+        
         # Initialize the parent class
         super().__init__()
                 
