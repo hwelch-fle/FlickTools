@@ -46,7 +46,7 @@ TOOLS =\
               "VertexBuffer",
               "GDBMerger",  
             ],
-        "utility": 
+        "utilities": 
             [
                 "VersionControl",
             ],
