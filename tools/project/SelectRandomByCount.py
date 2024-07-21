@@ -1,7 +1,7 @@
 import arcpy
 import random
 
-import utils.arcpy_tools as archelp
+import utils.archelp as archelp
 from utils.tool import Tool
 
 class SelectRandomByCount(Tool):

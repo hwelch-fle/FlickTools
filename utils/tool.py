@@ -1,6 +1,6 @@
 import arcpy
 import os
-import utils.arcpy_tools as archelp
+import utils.archelp as archelp
 
 class Tool(object):
     """

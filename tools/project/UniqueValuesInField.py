@@ -5,7 +5,7 @@ import arcpy
 from os import path as os_path
 from collections import defaultdict
 
-import utils.arcpy_tools as archelp
+import utils.archelp as archelp
 from utils.tool import Tool
 
 class UniqueValuesInField(Tool):
