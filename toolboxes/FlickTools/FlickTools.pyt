@@ -37,6 +37,15 @@ TOOLS =\
                 "FieldDomains",
                 "ZoomToHUC",
             ],
+        "production":
+            [
+              "VertexBuffer",
+              "GDBMerger",  
+            ],
+        "utility": 
+            [
+                "VersionControl",
+            ],
     }
 
 # Import all tools from the TOOLS dictionary
