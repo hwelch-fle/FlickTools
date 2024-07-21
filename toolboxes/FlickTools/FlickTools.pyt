@@ -6,9 +6,13 @@ from importlib import reload
 ROOT = str(Path(__file__).parents[2].absolute())
 
 # Insert the module roots to the system path
-sys.path.insert(0, ROOT) # ../pytframe2
-sys.path.insert(1, rf"{ROOT}\tools") # ../pytframe2/tools
-sys.path.insert(2, rf"{ROOT}\utils") # ../pytframe2/utils
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT) # ../pytframe2
+if rf"{ROOT}\tools" not in sys.path:
+    sys.path.insert(1, rf"{ROOT}\tools") # ../pytframe2/tools
+if rf"{ROOT}\utils" not in sys.path:
+    sys.path.insert(2, rf"{ROOT}\utils") # ../pytframe2/utils
+    
 # NOTE: Add more module paths here if needed
 
 # Import dynamic modules with pyt_reload prefix
@@ -50,6 +54,9 @@ TOOLS =\
 
 # Import all tools from the TOOLS dictionary
 IMPORTS: list[type[Tool]] = import_tools(TOOLS)
+
+# Manually add the tools to the global namespace
+globals().update({tool.__name__: tool for tool in IMPORTS})
 
 class Toolbox(object):
     def __init__(self):
