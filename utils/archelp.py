@@ -25,6 +25,27 @@ class controlCLSID(Enum):
     HORIZONTAL_VALUE_TABLE = '{1AA9A769-D3F3-4EB0-85CB-CC07C79313C8}'
     SINGLE_VALUE_TABLE = '{1A1CA7EC-A47A-4187-A15C-6EDBA4FE0CF7}'
 
+class Parameters(object):
+    """ Parameters class to store the parameters of a tool """
+    def __init__(self, parameters: list) -> None:
+        self._parameters = parameters
+        for parameter in parameters:
+            self.__dict__[parameter.name] = parameter
+        return
+    
+    def __iter__(self):
+        for _, value in self._parameters.items():
+            yield value
+        return
+    
+    def __getitem__(self, key):
+        return self.__dict__[key]
+    
+def sanitize_filename(filename: str) -> str:
+    """ Sanitize a filename """
+    return "".join([char for char in filename if char.isalnum() or char in [' ', '_', '-']])
+
+
 def row_to_dict(cursor: arcpy.da.SearchCursor) -> Generator[dict[str, Any], None, None]:
     """
     Converts a arcpy.da Cursor row to a dictionary
