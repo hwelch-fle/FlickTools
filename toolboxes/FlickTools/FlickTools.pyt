@@ -59,4 +59,4 @@ class Toolbox(object):
         self.alias = "FlickTools"
         
         # List of tool classes associated with this toolbox
-        self.tools = TOOLS
+        self.tools = IMPORTS
